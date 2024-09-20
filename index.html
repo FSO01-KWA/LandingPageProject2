@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넷플릭스 구독 플랜</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .subheading {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .plan.selected {
+            border: 3px solid red;
+            background-color: #ffebeb;
+        }
+
+        .plan h2 {
+            font-size: 1.5rem;
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+
+        .plan .price {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .plan ul li {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .plan ul li span {
+            color: #e50914;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #b0070d;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose a plan that's right for you.</h1>
+        <p class="subheading">Downgrade or upgrade at any time</p>
+
+        <div class="plans">
+            <!-- Basic Plan -->
+            <div class="plan">
+                <h2>Basic</h2>
+                <p class="price">$7.99</p>
+                <ul>
+                    <li><span>✔</span> HD available</li>
+                    <li><span>✘</span> Ultra HD available</li>
+                    <li><span>1</span> Screen at a time</li>
+                    <li>Watch on your laptop, TV, phone, and tablet</li>
+                    <li>Unlimited movies and TV shows</li>
+                    <li>Cancel anytime</li>
+                    <li>First month free</li>
+                </ul>
+                <a href="#" class="cta-button">Select</a>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="plan">
+                <h2>Standard</h2>
+                <p class="price">$10.99</p>
+                <ul>
+                    <li><span>✔</span> HD available</li>
+                    <li><span>✘</span> Ultra HD available</li>
+                    <li><span>2</span> Screens at a time</li>
+                    <li>Watch on your laptop, TV, phone, and tablet</li>
+                    <li>Unlimited movies and TV shows</li>
+                    <li>Cancel anytime</li>
+                    <li>First month free</li>
+                </ul>
+                <a href="#" class="cta-button">Select</a>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="plan selected">
+                <h2>Premium</h2>
+                <p class="price">$13.99</p>
+                <ul>
+                    <li><span>✔</span> HD available</li>
+                    <li><span>✔</span> Ultra HD available</li>
+                    <li><span>4</span> Screens at a time</li>
+                    <li>Watch on your laptop, TV, phone, and tablet</li>
+                    <li>Unlimited movies and TV shows</li>
+                    <li>Cancel anytime</li>
+                    <li>First month free</li>
+                </ul>
+                <a href="#" class="cta-button">Select</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
